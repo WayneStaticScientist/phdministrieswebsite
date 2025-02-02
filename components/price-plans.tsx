@@ -16,7 +16,7 @@ export default function PricePlans() {
                         </div>
                     </div>
                 </div>
-                <div className="row gy-30 justify-content-center">
+                <div className="row gap-y-10 justify-content-center">
                     <div className="col-xl-12 col-lg-4 col-md-6">
                         <div className="price-card2">
                             <div className="price-card-title-wrap">
@@ -58,7 +58,7 @@ export default function PricePlans() {
                     <div className="col-xl-12 col-lg-4 col-md-6">
                         <div className="price-card2">
                             <div className="price-card-title-wrap">
-                                <h3 className="price-card_title">Standard This Plan </h3>
+                                <h3 className="price-card_title">Free This Plan </h3>
                                 <p className="price-card_text">
                                     Refund policies vary based on the date of cancellation.
                                 </p>
@@ -66,7 +66,7 @@ export default function PricePlans() {
                             <div className="price-card-price-wrap">
                                 <h4 className="price-card_price">
                                     <span className="currency">$</span>
-                                    60
+                                    00
                                 </h4>
                             </div>
                             <div className="price-card_content">
@@ -79,7 +79,7 @@ export default function PricePlans() {
                                         <li>
                                             <i className="fas fa-circle-check" /> 24/7 system monitoring
                                         </li>
-                                        <li>
+                                        <li className="unavailable">
                                             <i className="fas fa-circle-check" /> Encourage team member
                                         </li>
                                         <li className="unavailable">
@@ -96,7 +96,7 @@ export default function PricePlans() {
                     <div className="col-xl-12 col-lg-4 col-md-6">
                         <div className="price-card2">
                             <div className="price-card-title-wrap">
-                                <h3 className="price-card_title">Premium This Plan </h3>
+                                <h3 className="price-card_title">Free This Plan </h3>
                                 <p className="price-card_text">
                                     Refund policies vary based on the date of cancellation.
                                 </p>
@@ -104,7 +104,7 @@ export default function PricePlans() {
                             <div className="price-card-price-wrap">
                                 <h4 className="price-card_price">
                                     <span className="currency">$</span>
-                                    120
+                                    00
                                 </h4>
                             </div>
                             <div className="price-card_content">
@@ -117,10 +117,10 @@ export default function PricePlans() {
                                         <li>
                                             <i className="fas fa-circle-check" /> 24/7 system monitoring
                                         </li>
-                                        <li>
+                                        <li className="unavailable">
                                             <i className="fas fa-circle-check" /> Encourage team member
                                         </li>
-                                        <li>
+                                        <li className="unavailable">
                                             <i className="fas fa-circle-check" /> Remote best support
                                         </li>
                                     </ul>

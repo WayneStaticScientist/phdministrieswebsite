@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Hero() {
@@ -52,22 +53,26 @@ export default function Hero() {
                 <div className="row gx-40 align-items-center">
                     <div className="col-lg-6">
                         <div className="hero-style3">
-                            <span className="sub-title after-none">Give Hope For Homeless</span>
+                            <span className="sub-title after-none">2 Corinthians 9:8-10</span>
                             <h1 className="hero-title">
-                                <span className="title1">Donate For A</span>
+                                <span className="text-xl">The Year of</span>
                                 <span className="title2">
-                                    Better <span className="text-theme2 d-inline-block">World</span>
+                                    Abudant  <span className="text-theme2 d-inline-block">Grace</span>
+                                    <span className="title2">and  Harvest</span>
+
                                 </span>
                             </h1>
-                            <p className="hero-text">
-                                Explore the variety of volunteer opportunities available. From event
-                                planning and fundraising to fieldwork and administrative support
+                            <p className="text-xs">
+                                8 And God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work.
+                                9 As it is written: &quot;They have freely scattered their gifts to the poor;
+                                their righteousness endures forever. &quot;
+                                10 Now he who supplies seed to the sower and bread for food will also supply and increase your store of seed and will enlarge the harvest of your righteousness.
                             </p>
                             <div className="btn-wrap">
-                                <a href="about.html" className="th-btn">
-                                    Discover Now
+                                <Link href="/" className="th-btn no-underline">
+                                    Partner with us
                                     <i className="fa-solid fa-arrow-up-right ms-2" />
-                                </a>
+                                </Link>
                                 <a
                                     href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
                                     className="play-btn style3 popup-video"

@@ -3,13 +3,12 @@ import React from 'react'
 export default function Faqs() {
     return (
         <div
-            className="space overflow-hidden faq-area-2"
-            data-bg-src="assets/img/bg/gray-bg2.png"
+            className="space overflow-hidden faq-area-2 background-image shape-mockup-wrap"
+            style={{ backgroundImage: "url(assets/img/bg/gray-bg2.png)" }}
         >
             <div
                 className="shape-mockup faq-shape2-1 jump-reverse"
-                data-top="20%"
-                data-left={0}
+                style={{ top: "20%", left: "0px" }}
             >
                 <img src="assets/img/shape/hand-bg-shape2-1.png" alt="img" />
             </div>
@@ -28,7 +27,7 @@ export default function Faqs() {
                                 <div className="accordion-card style2">
                                     <div className="accordion-header" id="collapse-item-1">
                                         <button
-                                            className="accordion-button "
+                                            className="accordion-button collapsed"
                                             type="button"
                                             data-bs-toggle="collapse"
                                             data-bs-target="#collapse-1"
@@ -40,9 +39,10 @@ export default function Faqs() {
                                     </div>
                                     <div
                                         id="collapse-1"
-                                        className="accordion-collapse collapse show"
+                                        className="accordion-collapse collapse"
                                         aria-labelledby="collapse-item-1"
                                         data-bs-parent="#faqAccordion"
+
                                     >
                                         <div className="accordion-body">
                                             <p className="faq-text">
