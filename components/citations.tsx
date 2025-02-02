@@ -10,10 +10,10 @@ export default function Citations() {
                             <div className="cta-content-wrap">
                                 <div className="title-area text-xl-start text-center mb-40">
                                     <span className="sub-title after-none before-none justify-content-xl-start justify-content-center">
-                                        Call To Action
+                                        PRAYER REQUEST
                                     </span>
-                                    <h2 className="sec-title text-white">
-                                        Give Your Big Hand Forever
+                                    <h2 className="sec-title text-white text-sm">
+                                        We welcome visitors from across the globe to stay with us and witness first-hand proof that Jesus Christ is the same yesterday, today and forever!
                                     </h2>
                                 </div>
                                 <form
