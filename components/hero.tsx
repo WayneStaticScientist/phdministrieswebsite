@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <div className="th-hero-wrapper hero-3" id="hero">
+        <div className="th-hero-wrapper  hero-3" id="hero">
             <div
-                className="shape-mockup hero-shape-3-1 d-lg-block d-none"
+                className=" shape-mockup hero-shape-3-1 d-lg-block d-none"
                 data-top="20%"
                 data-left="50%"
             >
@@ -17,7 +17,7 @@ export default function Hero() {
                 </div>
             </div>
             <div
-                className="shape-mockup hero-shape-3-2 jump"
+                className=" shape-mockup hero-shape-3-2 jump"
                 data-top="25%"
                 data-left="5%"
             >
@@ -30,7 +30,7 @@ export default function Hero() {
                 </div>
             </div>
             <div
-                className="shape-mockup hero-shape-3-3 jump"
+                className="shape-mockup  hero-shape-3-3 jump"
                 data-bottom={0}
                 data-left="-2%"
             >
@@ -43,11 +43,12 @@ export default function Hero() {
                 </div>
             </div>
             <div
-                className="hero-bg-3-1"
+                className="hero-bg-3-1 bg-hero "
+                style={{ backgroundImage: "url(assets/img/hero/hero_bg_3_1.jpg)" }}
                 data-bg-src="assets/img/hero/hero_bg_3_1.jpg"
                 data-mask-src="assets/img/hero/hero-bg-shape3-1.png"
             />
-            <div className="container">
+            <div className="container ">
                 <div className="row gx-40 align-items-center">
                     <div className="col-lg-6">
                         <div className="hero-style3">

@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero': "url('/public/assets/img/hero/hero_bg_3_1.jpg')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

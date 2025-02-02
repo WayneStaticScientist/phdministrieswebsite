@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function DonatationsBanner() {
+export default function PricePlans() {
     return (
         <section className="space overflow-hidden">
             <div className="container">

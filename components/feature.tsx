@@ -3,11 +3,15 @@ import React from 'react'
 export default function Feature() {
     return (
         <>
-            <section className="feature-area-1 position-relative space-bottom">
+            <section className="feature-area-1 position-relative space-bottom ">
                 <div
-                    className="feature-bg-wrap"
+                    className="feature-bg-wrap backround-image bg-mask"
                     data-bg-src="assets/img/bg/gray-bg2.png"
                     data-mask-src="assets/img/bg/feature-bg-mask-1.png"
+                    style={{
+                        backgroundImage: "url(assets/img/bg/gray-bg2.png)",
+                        maskImage: "url(assets/img/bg/feature-bg-mask-1.png)"
+                    }}
                 >
                     <div className="feature-bg-shape1-1" />
                 </div>
