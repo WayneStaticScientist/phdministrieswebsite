@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Complimentaries() {
     return (
-        <div className="why-sec-1 overflow-hidden space-bottom overflow-hidden">
+        <div className="why-sec-1 mt-24 space-bottom overflow-hidden">
             <div className="container">
                 <div className="row gx-80">
                     <div className="col-xl-6">

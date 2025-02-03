@@ -3,51 +3,64 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <div className="th-hero-wrapper  hero-3" id="hero">
+        <div className="th-hero-wrapper hero-3 shape-mockup-wrap" id="hero">
             <div
                 className=" shape-mockup hero-shape-3-1 d-lg-block d-none"
-                data-top="20%"
-                data-left="50%"
+                style={{
+                    top: "20%",
+                    left: "50%"
+                }}
             >
                 <div className="color-masking shake">
                     <div
-                        className="masking-src"
-                        data-mask-src="assets/img/hero/hero-bg-shape2-3.png"
+                        className="masking-src bg-mask"
+                        style={{
+                            maskImage: `url("assets/img/hero/hero-bg-shape2-3.png")`
+                        }}
                     />
                     <img src="assets/img/hero/hero-bg-shape2-3.png" alt="shape" />
                 </div>
             </div>
             <div
-                className=" shape-mockup hero-shape-3-2 jump"
-                data-top="25%"
-                data-left="5%"
+                className="shape-mockup hero-shape-3-2 jump"
+                style={{
+                    top: "25%",
+                    left: "5%"
+                }}
             >
                 <div className="color-masking">
                     <div
                         className="masking-src"
-                        data-mask-src="assets/img/hero/hero-bg-shape2-1.png"
+                        style={{
+                            maskImage: `url("assets/img/hero/hero-bg-shape2-1.png")`
+                        }}
                     />
                     <img src="assets/img/hero/hero-bg-shape2-1.png" alt="shape" />
                 </div>
             </div>
             <div
                 className="shape-mockup  hero-shape-3-3 jump"
-                data-bottom={0}
-                data-left="-2%"
+                style={{
+                    bottom: "0px",
+                    left: "-2%"
+                }}
             >
                 <div className="color-masking2">
                     <div
                         className="masking-src"
-                        data-mask-src="assets/img/shape/hand-shape3.png"
+                        style={{
+                            maskImage: `url("assets/img/shape/hand-shape3.png")`
+                        }}
                     />
                     <img src="assets/img/shape/hand-shape3.png" alt="shape" />
                 </div>
             </div>
             <div
-                className="hero-bg-3-1 bg-hero "
-                style={{ backgroundImage: "url(assets/img/hero/hero_bg_3_1.jpg)" }}
-                data-bg-src="assets/img/hero/hero_bg_3_1.jpg"
-                data-mask-src="assets/img/hero/hero-bg-shape3-1.png"
+                className="hero-bg-3-1 background-image bg-mask"
+                style={{
+                    backgroundImage: "url(assets/img/hero/hero_bg_3_1.jpg)",
+                    maskImage: `url("assets/img/hero/hero-bg-shape3-1.png")`
+                }}
             />
             <div className="container ">
                 <div className="row gx-40 align-items-center">

@@ -1,32 +1,53 @@
+import { MINISTRY_CONTACTS, MINISTRY_MAIL, SocialMediaHandles } from '@/stores/personal/contacts'
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className="footer-wrapper footer-layout2">
+        <footer className="footer-wrapper footer-layout2 shape-mockup-wrap">
             <div
                 className="shape-mockup footer-bg-shape2-1 jump"
-                data-left={0}
-                data-top={0}
+                style={{
+                    top: "0px",
+                    left: "0px"
+                }}
             >
-                <div className="color-masking2">
+                <div className="color-masking2"
+                >
                     <div
-                        className="masking-src"
-                        data-mask-src="assets/img/shape/footer-bg-shape2-1.png"
+                        className="masking-src bg-mask"
+                        style={{
+                            maskImage: "url(\"assets/img/shape/footer-bg-shape2-1.png\")"
+                        }}
                     />
-                    <img src="assets/img/shape/footer-bg-shape2-1.png" alt="img" />
+                    <Image
+                        src="/assets/img/shape/footer-bg-shape2-1.png" alt="img"
+                        width={338}
+                        height={176}
+                    />
                 </div>
             </div>
             <div
                 className="shape-mockup footer-bg-shape2-2 jump-reverse"
-                data-right={0}
-                data-bottom={0}
+                style={{
+                    right: "0px",
+                    bottom: "0px"
+                }}
             >
                 <div className="color-masking">
                     <div
-                        className="masking-src"
-                        data-mask-src="assets/img/shape/footer-bg-shape2-2.png"
+                        className="masking-src bg-mask"
+                        style={{
+                            maskImage: "url(\"assets/img/shape/footer-bg-shape2-2.png\")"
+                        }}
                     />
-                    <img src="assets/img/shape/footer-bg-shape2-2.png" alt="img" />
+                    <Image
+                        src="/assets/img/shape/footer-bg-shape2-2.png"
+                        alt="img"
+                        width={440}
+                        height={261}
+                    />
                 </div>
             </div>
             <div className="widget-area space-top">
@@ -36,14 +57,16 @@ export default function Footer() {
                             <div className="widget footer-widget">
                                 <div className="th-widget-about">
                                     <div className="about-logo">
-                                        <a href="index.html">
-                                            <img src="assets/img/logo-white.svg" alt="Donat" />
-                                        </a>
+                                        <Link href="/">
+                                            <Image src="/assets/img/logo.png"
+                                                alt="Donat"
+                                                width={98}
+                                                height={80}
+                                            />
+                                        </Link>
                                     </div>
                                     <p className="about-text mb-3">
-                                        {" "}
-                                        Our secure online donation platform allows you to make
-                                        contributions quickly
+                                        The Praise That Pushes Away Darkness
                                     </p>
                                     <div className="info-card style2">
                                         <div className="box-icon bg-theme">
@@ -51,9 +74,14 @@ export default function Footer() {
                                         </div>
                                         <div className="box-content">
                                             <p className="box-text">Call us any time:</p>
-                                            <h4 className="box-title">
-                                                <a href="tel:16336547896">+163-3654-7896</a>
-                                            </h4>
+                                            {MINISTRY_CONTACTS.map((e, i) => {
+                                                return (
+                                                    <h4 className="box-title " key={i}>
+                                                        <a className='no-underline' href={`tel:${e.number}`}>{e.fomarted}</a>
+                                                    </h4>
+                                                )
+                                            })}
+
                                         </div>
                                     </div>
                                     <div className="info-card style2">
@@ -63,7 +91,7 @@ export default function Footer() {
                                         <div className="box-content">
                                             <p className="box-text">Email us any time:</p>
                                             <h4 className="box-title">
-                                                <a href="mailto:info@donat.com">info@donat.com</a>
+                                                <a href={`mailto:${MINISTRY_MAIL}`}>{MINISTRY_MAIL}</a>
                                             </h4>
                                         </div>
                                     </div>
@@ -75,20 +103,21 @@ export default function Footer() {
                                 <h3 className="widget_title">Quick Links</h3>
                                 <div className="menu-all-pages-container">
                                     <ul className="menu">
+
                                         <li>
-                                            <a href="about.html">About Us</a>
+                                            <Link className='no-underline' href="/partnership">Partnership</Link>
                                         </li>
                                         <li>
-                                            <a href="blog.html">Our News</a>
+                                            <Link className='no-underline' href="/visit">Visit Us</Link>
                                         </li>
                                         <li>
-                                            <a href="about.html">Our Campaign</a>
+                                            <Link className='no-underline' href="/yadahtv">Yadah Tv</Link>
                                         </li>
                                         <li>
-                                            <a href="contact.html">Privacy policy</a>
+                                            <Link className='no-underline' href="/donations">Donations</Link>
                                         </li>
                                         <li>
-                                            <a href="contact.html">Contact Us</a>
+                                            <Link className='no-underline' href="/contact">Contact Us</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -96,24 +125,19 @@ export default function Footer() {
                         </div>
                         <div className="col-sm-6 col-xl-auto">
                             <div className="widget widget_nav_menu footer-widget">
-                                <h3 className="widget_title">Our Service</h3>
+                                <h3 className="widget_title">About</h3>
                                 <div className="menu-all-pages-container">
                                     <ul className="menu">
                                         <li>
-                                            <a href="donate-now.html">Give Donation</a>
+                                            <a href="/phdministries" className='no-underline'>Phd Ministries</a>
                                         </li>
                                         <li>
-                                            <a href="faq.html">Education Support</a>
+                                            <a href="/wateroflife" className='no-underline'>Water of Life</a>
                                         </li>
                                         <li>
-                                            <a href="faq.html">Food Support</a>
+                                            <a href="/offices" className='no-underline'>Our offices</a>
                                         </li>
-                                        <li>
-                                            <a href="faq.html">Health Support</a>
-                                        </li>
-                                        <li>
-                                            <a href="gallery.html">Our Campaign </a>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -122,8 +146,7 @@ export default function Footer() {
                             <div className="widget newsletter-widget footer-widget">
                                 <h3 className="widget_title">Newsletter</h3>
                                 <p className="footer-text mb-4">
-                                    Subscribe to Our Newsletter. Regular inspection and feedback
-                                    mechanisms
+                                    Stay Up-To-Date & Get Subscribe!
                                 </p>
                                 <form className="newsletter-form">
                                     <div className="form-group style-dark">
@@ -139,20 +162,17 @@ export default function Footer() {
                                     </button>
                                 </form>
                                 <div className="th-social style6">
-                                    <a href="https://www.facebook.com/">
+                                    <a href={`${SocialMediaHandles.facebook.url}`}>
                                         <i className="fab fa-facebook-f" />
                                     </a>
-                                    <a href="https://www.twitter.com/">
+                                    <a href={`${SocialMediaHandles.twitter.url}`}>
                                         <i className="fab fa-twitter" />
                                     </a>
-                                    <a href="https://www.linkedin.com/">
-                                        <i className="fab fa-linkedin-in" />
+                                    <a href={`${SocialMediaHandles.youtube.url}`}>
+                                        <i className="fab fa-youtube" />
                                     </a>
-                                    <a href="https://www.behance.com/">
-                                        <i className="fab fa-behance" />
-                                    </a>
-                                    <a href="https://www.vimeo.com/">
-                                        <i className="fab fa-vimeo-v" />
+                                    <a href={`${SocialMediaHandles.instagram.url}`}>
+                                        <i className="fab fa-instagram" />
                                     </a>
                                 </div>
                             </div>
@@ -163,7 +183,7 @@ export default function Footer() {
             <div className="copyright-wrap bg-theme text-center">
                 <div className="container">
                     <p className="copyright-text">
-                        Copyright 2024 <a href="index.html">Donat.</a> All Rights Reserved.
+                        Copyright {new Date().getFullYear()} <Link href="/">PHDMinistries</Link> All Rights Reserved.
                     </p>
                 </div>
             </div>

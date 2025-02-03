@@ -40,7 +40,6 @@ export default function HelpedPeople() {
                                             </div>
                                         </div>
                                     </div>
-
                                 )
                             })
                         }

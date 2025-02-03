@@ -25,12 +25,14 @@ const Header: React.FC = () => {
                                     <li className="">
                                         <Link href="/" className='no-underline'>Home</Link>
                                     </li>
-                                    <li><Link href="/about" className='no-underline'>Donations</Link></li>
+                                    <li><Link href="/prophetwmagaya" className='no-underline'>Prophet W Magaya</Link></li>
+                                    <li><Link href="/visit" className='no-underline'>Visit</Link></li>
+                                    <li><Link href="/partnership" className='no-underline'>Partnership</Link></li>
                                     <li className="menu-item-has-children no-underline">
                                         < Link href="/" className='no-underline'>About</Link>
                                         <ul className="sub-menu">
                                             <li>
-                                                <Link href="donation.html" className='no-underline'>
+                                                <Link href="/phdministries" className='no-underline'>
                                                     PHD Ministries
                                                 </Link>
                                             </li>

@@ -1,6 +1,9 @@
+import { allFaqs } from '@/stores/data/faqs'
+import Image from 'next/image'
 import React from 'react'
 
 export default function Faqs() {
+    const faqs = allFaqs()
     return (
         <div
             className="space overflow-hidden faq-area-2 background-image shape-mockup-wrap"
@@ -10,7 +13,9 @@ export default function Faqs() {
                 className="shape-mockup faq-shape2-1 jump-reverse"
                 style={{ top: "20%", left: "0px" }}
             >
-                <img src="assets/img/shape/hand-bg-shape2-1.png" alt="img" />
+                <Image src="/assets/img/shape/hand-bg-shape2-1.png" alt="img"
+                    width={208}
+                    height={176} />
             </div>
             <div className="container">
                 <div className="row gy-60 gx-60">
@@ -24,104 +29,55 @@ export default function Faqs() {
                                 <h2 className="sec-title">Have Any Questions For Us?</h2>
                             </div>
                             <div className="accordion" id="faqAccordion">
-                                <div className="accordion-card style2">
-                                    <div className="accordion-header" id="collapse-item-1">
-                                        <button
-                                            className="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-1"
-                                            aria-expanded="true"
-                                            aria-controls="collapse-1"
-                                        >
-                                            What motivates you to donate to our charity?
-                                        </button>
-                                    </div>
-                                    <div
-                                        id="collapse-1"
-                                        className="accordion-collapse collapse"
-                                        aria-labelledby="collapse-item-1"
-                                        data-bs-parent="#faqAccordion"
 
-                                    >
-                                        <div className="accordion-body">
-                                            <p className="faq-text">
-                                                Explore the variety of volunteer opportunities available.
-                                                From event planning and fundraising to fieldwork and
-                                                administrative support, there are many ways to lend your
-                                                talents. Find the perfect fit for your skills and interests.
-                                            </p>
+                                {Object.values(faqs).map((e, i) => {
+                                    return (
+                                        <div key={i} className="accordion-card style2">
+                                            <div className="accordion-header" id="collapse-item-2">
+                                                <button
+                                                    className="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-2"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapse-2"
+                                                >
+                                                    {e.title}
+                                                </button>
+                                            </div>
+                                            <div
+                                                id="collapse-2"
+                                                className="accordion-collapse collapse "
+                                                aria-labelledby="collapse-item-2"
+                                                data-bs-parent="#faqAccordion"
+                                            >
+                                                <div className="accordion-body">
+                                                    <p className="faq-text">
+                                                        {e.description}
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="accordion-card style2">
-                                    <div className="accordion-header" id="collapse-item-2">
-                                        <button
-                                            className="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-2"
-                                            aria-expanded="false"
-                                            aria-controls="collapse-2"
-                                        >
-                                            How did you hear about our organization?
-                                        </button>
-                                    </div>
-                                    <div
-                                        id="collapse-2"
-                                        className="accordion-collapse collapse "
-                                        aria-labelledby="collapse-item-2"
-                                        data-bs-parent="#faqAccordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <p className="faq-text">
-                                                Explore the variety of volunteer opportunities available.
-                                                From event planning and fundraising to fieldwork and
-                                                administrative support, there are many ways to lend your
-                                                talents. Find the perfect fit for your skills and interests.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="accordion-card style2">
-                                    <div className="accordion-header" id="collapse-item-3">
-                                        <button
-                                            className="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapse-3"
-                                            aria-expanded="false"
-                                            aria-controls="collapse-3"
-                                        >
-                                            How frequently do you prefer to volunteer?
-                                        </button>
-                                    </div>
-                                    <div
-                                        id="collapse-3"
-                                        className="accordion-collapse collapse "
-                                        aria-labelledby="collapse-item-3"
-                                        data-bs-parent="#faqAccordion"
-                                    >
-                                        <div className="accordion-body">
-                                            <p className="faq-text">
-                                                Explore the variety of volunteer opportunities available.
-                                                From event planning and fundraising to fieldwork and
-                                                administrative support, there are many ways to lend your
-                                                talents. Find the perfect fit for your skills and interests.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                    )
+                                })}
+
                             </div>
                         </div>
                     </div>
                     <div className="col-xl-5">
                         <div className="faq-img-box2">
                             <div className="img1">
-                                <img src="assets/img/normal/faq_2_1.png" alt="img" />
+                                <Image src="/assets/img/normal/faq_2_1.png" alt="img"
+                                    width={865}
+                                    height={790}
+                                />
                             </div>
                             <div className="faq-img-shape">
-                                <img src="assets/img/shape/faq-shape2-1.png" alt="img" />
+                                <Image src="/assets/img/shape/faq-shape2-1.png" alt="img"
+                                    width={163}
+                                    height={790}
+                                />
                             </div>
                         </div>
                     </div>

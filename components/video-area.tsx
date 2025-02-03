@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function VideoSection() {
@@ -10,7 +11,8 @@ export default function VideoSection() {
                 data-left={0}
                 data-bottom={0}
             >
-                <img src="assets/img/shape/video_bg_shape3_1.png" alt="img" />
+                <Image src="/assets/img/shape/video_bg_shape3_1.png" alt="img"
+                    width={133} height={640} />
             </div>
             <div
                 className="shape-mockup video-bg-shape3-2"
@@ -18,12 +20,14 @@ export default function VideoSection() {
                 data-right={0}
                 data-bottom={0}
             >
-                <img src="assets/img/shape/video_bg_shape3_2.png" alt="img" />
+                <Image src="/assets/img/shape/video_bg_shape3_2.png" alt="img"
+                    width={134} height={640} />
             </div>
             <div className="video-thumb3-1 video-box-center">
-                <img src="assets/img/normal/video-thumb3-1.png" alt="img" />
+                <Image src="/assets/img/normal/video-thumb3-1.png" alt="img"
+                    width={1920} height={640} />
                 <a
-                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                    href="https://www.youtube.com/watch?v=zwwL2KQXnuE"
                     className="play-btn style7 popup-video"
                 >
                     <i className="fa-sharp fa-solid fa-play" />
