@@ -1,13 +1,13 @@
+import dynamic from "next/dynamic";
 import Faqs from "@/components/faqs";
+import Hero from "@/components/hero";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import HelpedPeople from "@/components/helped-people";
-import Hero from "@/components/hero";
-import PricePlans from "@/components/price-plans";
-import ScrollTop from "@/components/scroll-top";
 import Services from "@/components/services";
+import ScrollTop from "@/components/scroll-top";
+import PricePlans from "@/components/price-plans";
 import VideoSection from "@/components/video-area";
-import dynamic from "next/dynamic";
+import HelpedPeople from "@/components/helped-people";
 const DynamicTeams = dynamic(() => import('@/components/teams'), { ssr: false });
 const DynamicBrand = dynamic(() => import('@/components/brand'), { ssr: false });
 const DynamicFeature = dynamic(() => import('@/components/feature'), { ssr: false });

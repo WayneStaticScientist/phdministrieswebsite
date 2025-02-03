@@ -4,7 +4,7 @@ export default function Citations() {
     return (
         <>
             <section className="" id="contact-sec">
-                <div className="cta-wrap3 style2 bg-theme-dark">
+                <div className="cta-wrap3 style2 bg-black">
                     <div className="row gx-0">
                         <div className="col-xl-7">
                             <div className="cta-content-wrap">
@@ -17,12 +17,12 @@ export default function Citations() {
                                     </h2>
                                 </div>
                                 <form
-                                    action="https://html.themeholy.com/donat/demo/mail.php"
-                                    method="POST"
+                                    action="/"
+                                    method="/"
                                     className="contact-form ajax-contact"
                                 >
-                                    <div className="row">
-                                        <div className="form-group col-md-6 style-dark">
+                                    <div className="grid grid-cols-3 gap-x-5 gap-y-5">
+                                        <div className="">
                                             <input
                                                 type="text"
                                                 className="form-control"
@@ -31,7 +31,7 @@ export default function Citations() {
                                                 placeholder="Your name"
                                             />
                                         </div>
-                                        <div className="form-group col-md-6 style-dark">
+                                        <div className="">
                                             <input
                                                 type="email"
                                                 className="form-control"
@@ -40,7 +40,7 @@ export default function Citations() {
                                                 placeholder="Your Email Address..."
                                             />
                                         </div>
-                                        <div className="form-group col-xxl-4 col-md-6 style-dark">
+                                        <div className="">
                                             <input
                                                 type="number"
                                                 className="form-control"
@@ -49,18 +49,16 @@ export default function Citations() {
                                                 placeholder="Phone Number..."
                                             />
                                         </div>
-                                        <div className="form-group col-xxl-4 col-md-6 style-dark">
-                                            <input
-                                                type="number"
-                                                className="form-control"
-                                                name="zip"
-                                                id="zip"
-                                                placeholder="Zip Code..."
+                                        <div className="col-span-3">
+                                            <textarea
+                                                className="rounded-none"
+                                                rows={25}
+                                                placeholder="Your prayer request"
                                             />
                                         </div>
-                                        <div className="form-group col-xxl-4 col-xl-12">
-                                            <button className="th-btn style3 w-100">
-                                                Get Involved Today
+                                        <div className="">
+                                            <button className="w-full bg-primary p-3 pl-8 pr-8 text-white rounded-full">
+                                                send prayer request
                                             </button>
                                         </div>
                                     </div>
@@ -68,81 +66,20 @@ export default function Citations() {
                                 </form>
                             </div>
                         </div>
-                        <div className="col-xl-5">
-                            <div className="contact-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sAngfuztheme!5e0!3m2!1sen!2sbd!4v1651028958211!5m2!1sen!2sbd"
+                        <div className="col-xl-5 p-3">
+                            <div className="w-full h-full">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1287.2410861304356!2d31.041809641626415!3d-17.882023830281728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a36c1aa514bb%3A0xb5ee40da1333aabe!2sYadah%20Hotel!5e0!3m2!1sen!2szw!4v1738570144812!5m2!1sen!2szw"
                                     allowFullScreen={true}
                                     loading="lazy"
-                                />
+                                    className='w-full h-full'
+                                    referrerPolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section
-                className="space"
-                id="team-sec"
-                data-bg-src="assets/img/bg/gray-bg2.png"
-            >
-                <div
-                    className="shape-mockup team-bg-shape3-1 d-xxl-block d-none"
-                    data-top="0%"
-                    data-left="0%"
-                    data-bottom={0}
-                >
-                    <img src="assets/img/shape/team_bg_shape3_1.png" alt="img" />
-                </div>
-                <div
-                    className="shape-mockup team-bg-shape3-2 d-xxl-block d-none"
-                    data-top="0%"
-                    data-right="0%"
-                    data-bottom={0}
-                >
-                    <img src="assets/img/shape/team_bg_shape3_2.png" alt="img" />
-                </div>
-                <div
-                    className="shape-mockup team-bg-shape3-3 spin d-xxl-block d-none"
-                    data-top="15%"
-                    data-left="20%"
-                >
-                    <div className="color-masking2">
-                        <div
-                            className="masking-src"
-                            data-mask-src="assets/img/shape/team_bg_shape3_3.png"
-                        />
-                        <img src="assets/img/shape/team_bg_shape3_3.png" alt="img" />
-                    </div>
-                </div>
-                <div
-                    className="shape-mockup team-bg-shape3-4 jump d-xxl-block d-none"
-                    data-top="18%"
-                    data-right="10%"
-                >
-                    <img src="assets/img/shape/team_bg_shape3_4.png" alt="img" />
-                </div>
-                <div
-                    className="shape-mockup team-bg-shape3-5 spin d-xxl-block d-none"
-                    data-bottom="18%"
-                    data-left="10%"
-                >
-                    <img src="assets/img/shape/team_bg_shape3_5.png" alt="img" />
-                </div>
-                <div
-                    className="shape-mockup team-bg-shape3-6 spin d-xxl-block d-none"
-                    data-bottom="10%"
-                    data-right="10%"
-                >
-                    <div className="color-masking">
-                        <div
-                            className="masking-src"
-                            data-mask-src="assets/img/shape/team_bg_shape3_6.png"
-                        />
-                        <img src="assets/img/shape/team_bg_shape3_6.png" alt="img" />
-                    </div>
-                </div>
+            </section >
 
-            </section>
         </>
 
     )
