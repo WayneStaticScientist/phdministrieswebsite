@@ -1,3 +1,4 @@
+import ContactForm from '@/components/contact-form'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Hero2 from '@/components/secondary-headers/hero2'
@@ -51,23 +52,8 @@ export default function PHDMinistriesPage() {
                                     <h3 className="blog-inner-title h4 mb-2">Leave a Reply</h3>
                                     <p className="form-text">Your email address will not be published. Required fields are marked</p>
                                 </div>
-                                <div className="row">
-                                    <div className="col-md-6 form-group style-border">
-                                        <input type="text" placeholder="Your Name" className="form-control" />
-                                    </div>
-                                    <div className="col-md-6 form-group style-border">
-                                        <input type="text" placeholder="Your Email" className="form-control" />
-                                    </div>
-                                    <div className="col-12 form-group style-border">
-                                        <input type="text" placeholder="Website" className="form-control" />
-                                    </div>
-                                    <div className="col-12 form-group style-border">
-                                        <textarea placeholder="Type Your Message" className="form-control" />
-                                    </div>
-                                    <div className="col-12 form-group mb-0">
-                                        <button className="th-btn btn-fw">SUBMIT COMMENT</button>
-                                    </div>
-                                </div>
+                                <ContactForm
+                                    type={"About Message"} />
                             </div>
                         </div>
                         <div className="col-xxl-4 col-lg-5">

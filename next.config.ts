@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: false,
 };
 module.exports = {
-
   // ...existing code...
 };
 
