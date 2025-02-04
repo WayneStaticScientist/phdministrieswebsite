@@ -17,7 +17,6 @@
 .mfp-wrap {
     z-index: 1043;
     outline: none !important;
-    -webkit-backface-visibility: hidden
 }
 
 .mfp-container {
@@ -126,7 +125,6 @@ button.mfp-close {
     cursor: pointer;
     background: transparent;
     border: 0;
-    -webkit-appearance: none;
     display: block;
     outline: none;
     padding: 0;

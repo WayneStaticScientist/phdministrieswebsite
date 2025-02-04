@@ -91,8 +91,8 @@ const Header = ({ page }: { page: string }) => {
                                     <i className="fas fa-heart me-2"></i>
                                     Donate
                                 </Link>
-                                <button type="button" className="icon-btn th-menu-toggle d-lg-none"><i
-                                    className="far fa-bars" onClick={toggleView}></i></button>
+                                <button type="button" className=""><i
+                                    className="far fa-bars text-3xl" onClick={toggleView}></i></button>
                             </div>
                         </div>
                     </div>
