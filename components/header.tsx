@@ -37,11 +37,11 @@ const Header: React.FC = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="donation-details.html" className='no-underline'>
+                                                <Link href="/wateroflife" className='no-underline'>
                                                     Water of Life
                                                 </Link>
                                             </li>
-                                            <li><Link href="donate-now.html" className='no-underline'>
+                                            <li><Link href="/statementoffaith" className='no-underline'>
                                                 Statement of Faith
                                             </Link>
                                             </li>
@@ -50,13 +50,13 @@ const Header: React.FC = () => {
                                     <li className="menu-item-has-children">
                                         <Link href="/" className='no-underline'>Ministries</Link>
                                         <ul className="sub-menu">
-                                            <li><Link href="shop.html" className='no-underline'>Yadah TV</Link></li>
-                                            <li><Link href="shop-details.html" className='no-underline'>Charity</Link></li>
-                                            <li><Link href="cart.html" className='no-underline'>Our Offices</Link></li>
+                                            <li><Link href="/yadahtv" className='no-underline'>Yadah TV</Link></li>
+                                            <li><Link href="/charity" className='no-underline'>Charity</Link></li>
+                                            <li><Link href="/offices" className='no-underline'>Our Offices</Link></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <Link href="/" className='no-underline'>Contact Us</Link>
+                                        <Link href="/contact" className='no-underline'>Contact Us</Link>
                                     </li>
                                 </ul>
                             </nav>
