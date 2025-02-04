@@ -1,10 +1,11 @@
 import React from 'react'
+import ContactForm from './contact-form'
 
 export default function Citations() {
     return (
         <>
             <section className="" id="contact-sec">
-                <div className="cta-wrap3 style2 bg-black">
+                <div className="cta-wrap3 style2 bg-colorPrimary">
                     <div className="row gx-0">
                         <div className="col-xl-7">
                             <div className="cta-content-wrap">
@@ -12,58 +13,17 @@ export default function Citations() {
                                     <span className="sub-title after-none before-none justify-content-xl-start justify-content-center">
                                         PRAYER REQUEST
                                     </span>
-                                    <h2 className="sec-title text-white text-sm">
+                                    <h2 className="sec-title text-white text-sm font-light">
                                         We welcome visitors from across the globe to stay with us and witness first-hand proof that Jesus Christ is the same yesterday, today and forever!
                                     </h2>
                                 </div>
-                                <form
-                                    action="/"
-                                    method="/"
+                                <div
+
                                     className="contact-form ajax-contact"
                                 >
-                                    <div className="grid grid-cols-3 gap-x-5 gap-y-5">
-                                        <div className="">
-                                            <input
-                                                type="text"
-                                                className="form-control"
-                                                name="name"
-                                                id="name"
-                                                placeholder="Your name"
-                                            />
-                                        </div>
-                                        <div className="">
-                                            <input
-                                                type="email"
-                                                className="form-control"
-                                                name="email"
-                                                id="email"
-                                                placeholder="Your Email Address..."
-                                            />
-                                        </div>
-                                        <div className="">
-                                            <input
-                                                type="number"
-                                                className="form-control"
-                                                name="number"
-                                                id="number"
-                                                placeholder="Phone Number..."
-                                            />
-                                        </div>
-                                        <div className="col-span-3">
-                                            <textarea
-                                                className="rounded-none"
-                                                rows={25}
-                                                placeholder="Your prayer request"
-                                            />
-                                        </div>
-                                        <div className="">
-                                            <button className="w-full bg-primary p-3 pl-8 pr-8 text-white rounded-full">
-                                                send prayer request
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <p className="form-messages mb-0 mt-3" />
-                                </form>
+                                    <ContactForm type={'Prayer Request'} messageText={'Type your prayer request'} buttonText={`send prayer request`}
+                                        success={'your prayer request has been well sent.Prophet W Magaya will pray for you in shortly'} />
+                                </div>
                             </div>
                         </div>
                         <div className="col-xl-5 p-3">

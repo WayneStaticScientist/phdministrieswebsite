@@ -83,7 +83,7 @@ export default function OfficesPage() {
                                                 <CiLocationOn size={20} /> {e.location}
                                             </div>
                                             <span className='font-bold'>{e.phone}</span>
-                                            <a href={`tel:${e.phone}`} className="th-btn no-underline">
+                                            <a href={`tel:${e.phone}`} className="th-btn no-underline p-3">
                                                 call now
                                             </a>
                                         </div>

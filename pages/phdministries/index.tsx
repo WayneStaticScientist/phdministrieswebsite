@@ -94,7 +94,7 @@ export default function PHDMinistriesPage() {
                                     <div className="widget-donation-wrap">
                                         <div className="donate-price">{new Date().getFullYear() - 2013}</div>
                                         <h4 className="title">years of service</h4>
-                                        <Link className="th-btn no-underline" href="/visit">visit us</Link>
+                                        <Link className="th-btn no-underline p-3" href="/visit">visit us</Link>
                                     </div>
                                 </div>
 

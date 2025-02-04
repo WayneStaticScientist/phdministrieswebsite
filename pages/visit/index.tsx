@@ -89,7 +89,7 @@ export default function VisitUs() {
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="https://www.google.com/maps/place/Yadah+Hotel/data=!4m2!3m1!1s0x0:0xb5ee40da1333aabe?sa=X&ved=1t:2428&ictx=111" className="th-btn no-underline">View Location In Google <i className="fas fa-arrow-up-right ms-2"></i></a>
+                                    <a href="https://www.google.com/maps/place/Yadah+Hotel/data=!4m2!3m1!1s0x0:0xb5ee40da1333aabe?sa=X&ved=1t:2428&ictx=111" className="th-btn no-underline p-3">View Location In Google <i className="fas fa-arrow-up-right ms-2"></i></a>
                                 </div>
                             </div>
                         </div>

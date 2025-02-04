@@ -2528,8 +2528,6 @@ textarea.is-invalid {
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
-  padding: 22px 40px;
-  min-width: 170px;
   border-radius: 50px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -7365,10 +7363,6 @@ ol.wp-block-rss {
   color: var(--theme-color);
 }
 
-.header-logo {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 
 .header-logo a:hover {
   color: var(--white-color);
@@ -8119,7 +8113,7 @@ ol.wp-block-rss {
 }
 
 .header-layout2 .menu-area .header-button .th-btn {
-  padding: 22.5px 48px;
+  padding: 5px;
 }
 
 .header-layout2 .main-menu>ul>li>a {

@@ -60,14 +60,14 @@ export default function AboutUs() {
                                 <div className="year-counter_number">
                                     <span className="counter-number">100000</span>+ Testimonies
                                 </div>
-                                <Link className="text-white no-underline ring-2 p-2 ring-white rounded-full hover:bg-white hover:text-black" href="/">
+                                <Link className="text-white no-underline ring-2 p-2 ring-white rounded-full hover:bg-white hover:text-black" href="/partnership">
                                     Become a Partner
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-6">
-                        <div className="title-area mb-40">
+                    <div className="col-xl-6 ">
+                        <div className="title-area mb-40 mt-40">
                             <span className="sub-title after-none before-none">
                                 Phd Ministries
                             </span>
@@ -96,7 +96,7 @@ export default function AboutUs() {
                                 </div>
                             </div>
                             <div className="btn-wrap mt-40">
-                                <Link href="/" className="th-btn style3 style-radius no-underline">
+                                <Link href="/visit" className="th-btn p-3 style3 style-radius no-underline">
                                     Visit Guest House
                                     <i className="fa-solid fa-arrow-up-right ms-2"></i>
                                 </Link>

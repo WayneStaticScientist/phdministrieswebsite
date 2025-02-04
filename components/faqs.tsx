@@ -1,7 +1,8 @@
 import { allFaqs } from '@/stores/data/faqs'
+import { Accordion, AccordionItem } from '@szhsin/react-accordion'
 import Image from 'next/image'
 import React from 'react'
-
+import { BiChevronDown } from 'react-icons/bi'
 export default function Faqs() {
     const faqs = allFaqs()
     return (
@@ -29,39 +30,34 @@ export default function Faqs() {
                                 <h2 className="sec-title">Have Any Questions For Us?</h2>
                             </div>
                             <div className="accordion" id="faqAccordion">
-
-                                {Object.values(faqs).map((e, i) => {
-                                    return (
-                                        <div key={i} className="accordion-card style2">
-                                            <div className="accordion-header" id="collapse-item-2">
-                                                <button
-                                                    className="accordion-button collapsed"
-                                                    type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapse-2"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapse-2"
-                                                >
-                                                    {e.title}
-                                                </button>
-                                            </div>
-                                            <div
-                                                id="collapse-2"
-                                                className="accordion-collapse collapse "
-                                                aria-labelledby="collapse-item-2"
-                                                data-bs-parent="#faqAccordion"
+                                <Accordion className='flex flex-col gap-y-6 p-0 m-0' >
+                                    {Object.values(faqs).map((e, i) => {
+                                        return (
+                                            <AccordionItem key={i}
+                                                header={
+                                                    <div className='flex justify-between w-full m-0  items-center'>
+                                                        <span className=''>{e.title}</span>
+                                                        <span className='flex justify-end '>
+                                                            <BiChevronDown size={30} className=' flex flex-shrink-0' />
+                                                        </span>
+                                                    </div>
+                                                }
+                                                headingTag='h6'
+                                                className='flex flex-col w-full items-center bg-white p-3'
+                                                buttonProps={{
+                                                    className: ({ isEnter }) =>
+                                                        isEnter ? 'bg-blue' : 'bg-white',
+                                                }}
+                                                contentProps={{ className: '' }}
+                                                panelProps={{ className: '' }}
                                             >
-                                                <div className="accordion-body">
-                                                    <p className="faq-text">
-                                                        {e.description}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    )
-                                })}
-
+                                                <span className='p-3'>
+                                                    {e.description}
+                                                </span>
+                                            </AccordionItem>
+                                        )
+                                    })}
+                                </Accordion>
                             </div>
                         </div>
                     </div>
@@ -81,9 +77,9 @@ export default function Faqs() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </div >
+            </div >
+        </div >
 
     )
 }

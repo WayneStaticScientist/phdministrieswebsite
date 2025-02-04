@@ -11,7 +11,7 @@ export default function HelpedPeople() {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="title-area text-center">
-                                <span className="sub-title before-none after-none"><i className="far fa-heart text-theme"></i> Lets
+                                <span className="sub-title before-none after-none"><i className="far fa-heart text-theme"></i>
                                     Testimonies</span>
                                 <h2 className="sec-title">See the Power of God in healing </h2>
                             </div>
@@ -25,12 +25,12 @@ export default function HelpedPeople() {
                                         <div className="donation-card style3">
                                             <div className="box-thumb">
                                                 <Image src={e.image} alt="image" width={e.width} height={e.height} />
-                                                <div className="donation-card-tag">85%</div>
+                                                <div className="donation-card-tag">PHD</div>
                                                 <div className="donation-card-shape"
                                                     data-mask-src="assets/img/donation/donation-card-shape2-1.png"></div>
                                             </div>
                                             <div className="box-content">
-                                                <h3 className="box-title"><a href="blog-details.html">{e.title}</a>
+                                                <h3 className="box-title"><a href="#" className='no-underline'>{e.title}</a>
                                                 </h3>
                                                 <p>{e.summary}
                                                 </p>

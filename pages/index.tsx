@@ -3,29 +3,31 @@ import Faqs from "@/components/faqs";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import Services from "@/components/services";
-import ScrollTop from "@/components/scroll-top";
-import VideoSection from "@/components/video-area";
-import HelpedPeople from "@/components/helped-people";
+import { ToastContainer } from "react-toastify";
 const DynamicFeature = dynamic(() => import('@/components/feature'), { ssr: false });
 const DynamicAboutUs = dynamic(() => import('@/components/about-us'), { ssr: false });
 const DynamicCitations = dynamic(() => import('@/components/citations'), { ssr: false });
 const DynamicMotivationals = dynamic(() => import('@/components/motivational'), { ssr: false });
+const DynamicScrollToTop = dynamic(() => import('@/components/scroll-top'), { ssr: false });
+const DynamicVideoSection = dynamic(() => import('@/components/video-area'), { ssr: false });
+const DynamicHelpedPeople = dynamic(() => import('@/components/helped-people'), { ssr: false });
+const DynamicServices = dynamic(() => import('@/components/services'), { ssr: false });
 export default function Home() {
   return (
     <>
+      <ToastContainer />
       <Header page="home" />
       <Hero />
       <DynamicFeature />
       <DynamicAboutUs />
-      <Services />
+      <DynamicServices />
       <DynamicCitations />
-      <HelpedPeople />
-      <VideoSection />
+      <DynamicHelpedPeople />
+      <DynamicVideoSection />
       <Faqs />
       <DynamicMotivationals />
       <Footer />
-      <ScrollTop />
+      <DynamicScrollToTop />
     </>
   );
 }

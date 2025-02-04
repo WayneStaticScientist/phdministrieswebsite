@@ -59,7 +59,7 @@ export default function PhdMinistries() {
                                 </div>
 
                                 <div className="btn-wrap mt-40">
-                                    <Link href="/" className="th-btn no-underline">
+                                    <Link href="/visit" className="th-btn no-underline p-3">
                                         Guest House Visit<i className="fas fa-arrow-up-right ms-2"></i>
                                     </Link>
                                 </div>
@@ -83,7 +83,9 @@ export default function PhdMinistries() {
                                             className='w-full h-16' alt="icon" width={510} height={500} />
                                     </div>
                                     <span className='font-bold'>{e.title}</span>
-                                    <button className="bg-primary w-fit p-3 rounded-xl text-white mb-3">Download</button>
+                                    <Link href={e.downloadUrl}>
+                                        <button className="bg-primary w-fit p-3 rounded-xl text-white mb-3">Download</button>
+                                    </Link>
                                 </div>
                             </div>
                         )

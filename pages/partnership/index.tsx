@@ -1,3 +1,4 @@
+import ContactForm from '@/components/contact-form'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Hero2 from '@/components/secondary-headers/hero2'
@@ -6,11 +7,13 @@ import { SocialMediaHandles } from '@/stores/personal/contacts'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { ToastContainer } from 'react-toastify'
 
 export default function PartWithUs() {
     const testimonies = useTestimonies()
     return (
         <>
+            <ToastContainer />
             <Header page='partnership' />
             <Hero2 title='Partner With Us'
                 image='assets/img/bg/partners.jpg'
@@ -38,11 +41,6 @@ export default function PartWithUs() {
                                     />
                                 </div>
                                 <div className="blog-content">
-                                    <div className="blog-meta">
-                                        <Link href="blog.html"><i className="fas fa-calendar-days"></i>July 05, 2024</Link>
-                                        <Link href="blog.html"><i className="fas fa-tags"></i>Education</Link>
-                                        <Link href="blog.html"><i className="fas fa-comments"></i>Comments (03)</Link>
-                                    </div>
                                     <h2 className="blog-title">What is Partnership</h2>
                                     <p>Partnering with Yadah-Tv means partnering with us as Prophetic Healing and Deliverance Ministries (PHD Ministries). Partnering is the act of giving to the house of God for the support of God’s ministry. Being a Partner means you are equally concerned with the spreading of God’s Word to all places. You understand the vision and mission of the visionary or leader of the Ministry. A partner becomes a very important person of the Ministry who is different from other ordinary congregants. You commit yourself through using the resources that you have (be it time, financial or material) in order for God’s word to progress. Just like a cheerful giver to the house of God, a partner is abundantly blessed by the Almighty for supporting His work.</p>
                                     <blockquote className="bg-white">
@@ -98,23 +96,7 @@ export default function PartWithUs() {
                                     <h3 className="blog-inner-title h4 mb-2">Leave a Reply</h3>
                                     <p className="form-text">Your email address will not be published. Required fields are marked</p>
                                 </div>
-                                <div className="row">
-                                    <div className="col-md-6 form-group style-border">
-                                        <input type="text" placeholder="Your Name" className="form-control" />
-                                    </div>
-                                    <div className="col-md-6 form-group style-border">
-                                        <input type="text" placeholder="Your Email" className="form-control" />
-                                    </div>
-                                    <div className="col-12 form-group style-border">
-                                        <input type="text" placeholder="Website" className="form-control" />
-                                    </div>
-                                    <div className="col-12 form-group style-border">
-                                        <textarea placeholder="Type Your Message" className="form-control" />
-                                    </div>
-                                    <div className="col-12 form-group mb-0">
-                                        <button className="th-btn btn-fw">SUBMIT COMMENT</button>
-                                    </div>
-                                </div>
+                                <ContactForm />
                             </div>
                         </div>
                         <div className="col-xxl-4 col-lg-5">

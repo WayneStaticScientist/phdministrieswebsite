@@ -82,12 +82,12 @@ export default function Hero() {
                                 10 Now he who supplies seed to the sower and bread for food will also supply and increase your store of seed and will enlarge the harvest of your righteousness.
                             </p>
                             <div className="btn-wrap">
-                                <Link href="/" className="th-btn no-underline">
+                                <Link href="/partnership" className="th-btn no-underline p-3">
                                     Partner with us
                                     <i className="fa-solid fa-arrow-up-right ms-2" />
                                 </Link>
                                 <a
-                                    href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
+                                    href="https://www.youtube.com/watch?v=bI6JKjU_qeg"
                                     className="play-btn style3 popup-video"
                                 >
                                     <i className="fas fa-play" />

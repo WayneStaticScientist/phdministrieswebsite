@@ -19,9 +19,9 @@ export default function Hero2(
                         {
                             path.map((e, i) => {
                                 if (e.path && e.path.length > 0) {
-                                    return <li key={i}><a href={`${path}`}>{e.title}</a></li>
+                                    return <li key={i}><a href={`${path}`} className='no-underline font-extrabold '>{e.title}</a></li>
                                 }
-                                return <li key={i}>{e.title}</li>
+                                return <li key={i}><a>{e.title}</a></li>
                             })
                         }
                     </ul>
