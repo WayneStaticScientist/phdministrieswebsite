@@ -7,7 +7,7 @@ import React from 'react'
 export default function StatementOfFaith() {
     return (
         <>
-            <Header />
+            <Header page='about' />
             <Hero2 title='Statement Of Faith'
                 image='assets/img/bg/stat.jpg'
                 path={

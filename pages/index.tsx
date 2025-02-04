@@ -14,7 +14,7 @@ const DynamicMotivationals = dynamic(() => import('@/components/motivational'), 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header page="home" />
       <Hero />
       <DynamicFeature />
       <DynamicAboutUs />

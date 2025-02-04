@@ -129,13 +129,13 @@ export default function Footer() {
                                 <div className="menu-all-pages-container">
                                     <ul className="menu">
                                         <li>
-                                            <a href="/phdministries" className='no-underline'>Phd Ministries</a>
+                                            <Link href="/phdministries" className='no-underline'>Phd Ministries</Link>
                                         </li>
                                         <li>
-                                            <a href="/wateroflife" className='no-underline'>Water of Life</a>
+                                            <Link href="/wateroflife" className='no-underline'>Water of Life</Link>
                                         </li>
                                         <li>
-                                            <a href="/offices" className='no-underline'>Our offices</a>
+                                            <Link href="/offices" className='no-underline'>Our offices</Link>
                                         </li>
 
                                     </ul>

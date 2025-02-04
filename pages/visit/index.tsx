@@ -9,7 +9,7 @@ import React from 'react'
 export default function VisitUs() {
     return (
         <>
-            <Header />
+            <Header page='visit' />
             <Hero2 title='Visit Us'
                 image='assets/img/bg/visitbg.jpg'
                 path={

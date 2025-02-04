@@ -8,7 +8,7 @@ import React from 'react'
 export default function YadahTvPage() {
     return (
         <>
-            <Header />
+            <Header page='ministry' />
             <Hero2 title='YadahTV'
                 image='assets/img/bg/tv.jpg'
                 path={

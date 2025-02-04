@@ -7,7 +7,7 @@ import React from 'react'
 export default function CharityPage() {
     return (
         <>
-            <Header />
+            <Header page='ministry' />
             <Hero2 title='Charity'
                 image='assets/img/bg/charity.jpg'
                 path={

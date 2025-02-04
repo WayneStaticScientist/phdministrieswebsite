@@ -7,7 +7,7 @@ import React from 'react'
 export default function WaterOfLifePage() {
     return (
         <>
-            <Header />
+            <Header page='about' />
             <Hero2 title='Water of Life'
                 image='assets/img/bg/wol.jpg'
                 path={

@@ -8,7 +8,7 @@ import React from 'react'
 export default function PHDMinistriesPage() {
     return (
         <>
-            <Header />
+            <Header page='about' />
             <Hero2 title='Phd Ministries'
                 image='assets/img/bg/phd.jpg'
                 path={
@@ -82,7 +82,7 @@ export default function PHDMinistriesPage() {
                                             />
                                         </div>
                                         <div className="author-info">
-                                            <h4 className="name"><a className="text-inherit no-underline" href="/prophetwmagaya">Prophet W.Magaya</a></h4>
+                                            <h4 className="name"><Link className="text-inherit no-underline" href="/prophetwmagaya">Prophet W.Magaya</Link></h4>
                                             <span className="meta">
                                                 <i className="fas fa-tags"></i>Founder and Visionary
                                             </span>

@@ -11,7 +11,7 @@ export default function OfficesPage() {
 
     return (
         <>
-            <Header />
+            <Header page='ministry' />
             <Hero2 title='Our Offices'
                 image='assets/img/bg/hoteloffice.png'
                 path={

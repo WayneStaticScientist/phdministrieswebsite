@@ -10,7 +10,7 @@ export default function PhdMinistries() {
     const books = useBooksStates()
     return (
         <>
-            <Header />
+            <Header page='pwm' />
             <Hero2 title='Prophet Walter Magaya'
                 image='assets/img/bg/pwm.jpg'
                 path={

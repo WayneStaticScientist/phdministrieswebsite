@@ -11,7 +11,7 @@ export default function PartWithUs() {
     const testimonies = useTestimonies()
     return (
         <>
-            <Header />
+            <Header page='partnership' />
             <Hero2 title='Partner With Us'
                 image='assets/img/bg/partners.jpg'
                 path={
@@ -39,9 +39,9 @@ export default function PartWithUs() {
                                 </div>
                                 <div className="blog-content">
                                     <div className="blog-meta">
-                                        <a href="blog.html"><i className="fas fa-calendar-days"></i>July 05, 2024</a>
-                                        <a href="blog.html"><i className="fas fa-tags"></i>Education</a>
-                                        <a href="blog.html"><i className="fas fa-comments"></i>Comments (03)</a>
+                                        <Link href="blog.html"><i className="fas fa-calendar-days"></i>July 05, 2024</Link>
+                                        <Link href="blog.html"><i className="fas fa-tags"></i>Education</Link>
+                                        <Link href="blog.html"><i className="fas fa-comments"></i>Comments (03)</Link>
                                     </div>
                                     <h2 className="blog-title">What is Partnership</h2>
                                     <p>Partnering with Yadah-Tv means partnering with us as Prophetic Healing and Deliverance Ministries (PHD Ministries). Partnering is the act of giving to the house of God for the support of God’s ministry. Being a Partner means you are equally concerned with the spreading of God’s Word to all places. You understand the vision and mission of the visionary or leader of the Ministry. A partner becomes a very important person of the Ministry who is different from other ordinary congregants. You commit yourself through using the resources that you have (be it time, financial or material) in order for God’s word to progress. Just like a cheerful giver to the house of God, a partner is abundantly blessed by the Almighty for supporting His work.</p>
@@ -75,17 +75,17 @@ export default function PartWithUs() {
                                             <div className="col-md-auto">
                                                 <span className="share-links-title">Tags:</span>
                                                 <div className="tagcloud">
-                                                    <a href="/partnership" className='no-underline'>Partnership</a>
-                                                    <a href="/prophetwmagaya" className='no-underline'>prophetwmagaya</a>
+                                                    <Link href="/partnership" className='no-underline'>Partnership</Link>
+                                                    <Link href="/prophetwmagaya" className='no-underline'>prophetwmagaya</Link>
                                                 </div>
                                             </div>
                                             <div className="col-md-auto text-xl-end">
                                                 <span className="share-links-title">Share:</span>
                                                 <div className="th-social align-items-center">
-                                                    <a href={`${SocialMediaHandles.facebook.url}`}><i className="fab fa-facebook-f"></i></a>
-                                                    <a href={`${SocialMediaHandles.twitter.url}`}><i className="fab fa-twitter"></i></a>
-                                                    <a href={`${SocialMediaHandles.instagram.url}`}><i className="fab fa-instagram"></i></a>
-                                                    <a href={`${SocialMediaHandles.youtube.url}`}><i className="fab fa-youtube"></i></a>
+                                                    <Link href={`${SocialMediaHandles.facebook.url}`}><i className="fab fa-facebook-f"></i></Link>
+                                                    <Link href={`${SocialMediaHandles.twitter.url}`}><i className="fab fa-twitter"></i></Link>
+                                                    <Link href={`${SocialMediaHandles.instagram.url}`}><i className="fab fa-instagram"></i></Link>
+                                                    <Link href={`${SocialMediaHandles.youtube.url}`}><i className="fab fa-youtube"></i></Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,15 +155,15 @@ export default function PartWithUs() {
                                                 return (
                                                     <div className="recent-post" key={i}>
                                                         <div className="media-img">
-                                                            <a href="blog-details.html">
+                                                            <Link href="blog-details.html">
                                                                 <Image className='w-28 h-28' src={e.image} alt="image" width={e.width} height={e.height} />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="media-body">
                                                             <div className="recent-post-meta">
-                                                                <a href={e.path}><i className="fas fa-calendar-days"></i>{e.date}</a>
+                                                                <Link href={e.path}><i className="fas fa-calendar-days"></i>{e.date}</Link>
                                                             </div>
-                                                            <h4 className="post-title"><a className="text-inherit" href="blog-details.html">{e.summary}</a></h4>
+                                                            <h4 className="post-title"><Link className="text-inherit" href="blog-details.html">{e.summary}</Link></h4>
                                                         </div>
                                                     </div>)
                                             })
