@@ -28,7 +28,7 @@ const Header = ({ page }: { page: string }) => {
                                 </Link>
                             </div>
                             <div className="menu-area-wrap">
-                                <nav className="main-menu d-none d-lg-block">
+                                <nav className="main-menu d-none d-lg-block ">
                                     <ul>
                                         <li className="">
                                             <Link href="/" className={`no-underline `}>
@@ -91,8 +91,8 @@ const Header = ({ page }: { page: string }) => {
                                     <i className="fas fa-heart me-2"></i>
                                     Donate
                                 </Link>
-                                <button type="button" className=""><i
-                                    className="far fa-bars text-3xl" onClick={toggleView}></i></button>
+                                <button type="button" className="lg:hidden  bg-colorPrimary p-3 flex-shrink-0 rounded-full text-white"><i
+                                    className="far fa-bars text-xl" onClick={toggleView}></i></button>
                             </div>
                         </div>
                     </div>

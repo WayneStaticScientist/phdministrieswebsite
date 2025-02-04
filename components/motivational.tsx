@@ -16,10 +16,11 @@ export default function MotivationalQoutes() {
                         <h2 className="sec-title">Some of the populer qoutes</h2>
                     </div>
                     <CarouselProvider
+                        className='h-80 w-full'
                         naturalSlideWidth={100}
-                        naturalSlideHeight={50}
+                        naturalSlideHeight={150}
                         totalSlides={MotivationaWords.length}
-                        visibleSlides={2}
+                        visibleSlides={1}
                         infinite={true}
                         isPlaying={true}
                         interval={3000}
