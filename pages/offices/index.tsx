@@ -1,14 +1,13 @@
+import React from 'react'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
+import { CiLocationOn } from 'react-icons/ci'
 import Hero2 from '@/components/secondary-headers/hero2'
 import { useOffices, useOfficesInternational } from '@/stores/data/offices'
-import React from 'react'
-import { CiLocationOn } from 'react-icons/ci'
 
 export default function OfficesPage() {
     const offices = useOffices()
     const officesInternation = useOfficesInternational()
-
     return (
         <>
             <Header page='ministry' />

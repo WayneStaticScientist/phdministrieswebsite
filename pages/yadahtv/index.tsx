@@ -58,10 +58,10 @@ export default function YadahTvPage() {
                                         Yadah TV is the television station of Prophetic Healing and Deliverance, broadcasting 24/7 around the globe via satellite and on the internet. The purpose of Yadah TV is to preach the Good News to all mankind. That is what we are born for, living for and what we shall die for. Yadah TV is committed to changing lives, changing nations and changing the whole world through the Gospel of our Lord Jesus Christ. Jesus Christ is the inspiration behind Yadah TV; as such, God’s purpose is our purpose. The Bible says, faith cometh by hearing the Word of God (Romans 10:17). The people hear and change. Nations hear and change. The world hears and changes. Yadah TV has a message for the entire world and the message is quite simple: “Jesus Christ is the same yesterday, today and forever”. If people are to believe this, someone has to point the way and that is what Yadah TV is set to do. You can watch Yadah TV online on our official facebook and youtube platform.
                                     </p>
                                     <div className="btn-wrap mt-35">
-                                        <Link href="/" className="th-btn style-border no-underline">
+                                        <Link href="https://play.google.com/store/apps/details?id=com.yadahdev.yadah_tv&pcampaignid=web_share" className="th-btn style-border no-underline" target='_blank'>
                                             Download YadahTv Android <i className="fas fa-arrow-up-right ms-2"></i>
                                         </Link>
-                                        <Link href="/" className="th-btn style-border no-underline">
+                                        <Link href="https://apps.apple.com/zm/app/yadah-tv/id1610314980" className="th-btn style-border no-underline" target='_blank'>
                                             Download YadahTv Ios <i className="fas fa-arrow-up-right ms-2"></i>
                                         </Link>
                                     </div>
