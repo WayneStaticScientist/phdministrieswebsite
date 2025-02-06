@@ -1,13 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JS (if needed)
 
-export default function MobileMenu({ page, display, toggleDisplay }: { page: string, display: boolean, toggleDisplay: (e: boolean) => void }) {
+export default function MobileMenu({ page, ref, menuOpen, setMenuOpen }: { setMenuOpen: (open: boolean) => void, page: string, menuOpen: boolean, ref: React.Ref<HTMLDivElement> }) {
     return (
         <>
-            <div className={`th-menu-wrapper fixed  z-50 h-screen flex ${display ? 'th-body-visible' : 'hidden'}`}>
-                <div className="th-menu-area text-center ">
-                    <button className="th-menu-toggle" onClick={() => toggleDisplay(!display)}><i className="fal fa-times"></i></button>
+            <div ref={ref} className={`th-menu-wrapper ${menuOpen ? 'th-body-visible' : ''}`} id='someNameICantPossibleyRemember'>
+                <div className="th-menu-area text-center">
+                    <button className="th-menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+                        <i className="fal fa-times"></i></button>
                     <div className="mobile-logo  ">
                         <Link href="/" className='flex justify-center'>
                             <Image

@@ -143,9 +143,9 @@ export default function PartWithUs() {
                                                         </div>
                                                         <div className="media-body">
                                                             <div className="recent-post-meta">
-                                                                <Link href={e.path}><i className="fas fa-calendar-days"></i>{e.date}</Link>
+                                                                <Link href={e.path} className='no-underline'><i className="fas fa-calendar-days"></i>{e.date}</Link>
                                                             </div>
-                                                            <h4 className="post-title"><Link className="text-inherit" href="blog-details.html">{e.summary}</Link></h4>
+                                                            <h4 className="post-title"><Link className="text-inherit no-underline" href="#">{e.summary}</Link></h4>
                                                         </div>
                                                     </div>)
                                             })

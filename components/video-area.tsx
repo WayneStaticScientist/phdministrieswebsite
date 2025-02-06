@@ -4,21 +4,25 @@ import React from 'react'
 export default function VideoSection() {
     return (
 
-        <div className="video-area-3">
+        <div className="video-area-3 shape-mockup-wrap">
             <div
                 className="shape-mockup video-bg-shape3-1"
-                data-top={0}
-                data-left={0}
-                data-bottom={0}
+                style={{
+                    top: "0px",
+                    left: "0px",
+                    bottom: "0px"
+                }}
             >
                 <Image src="/assets/img/shape/video_bg_shape3_1.png" alt="img"
                     width={133} height={640} />
             </div>
             <div
-                className="shape-mockup video-bg-shape3-2"
-                data-top={0}
-                data-right={0}
-                data-bottom={0}
+                className="shape-mockup video-bg-shape3-2 bg-mask"
+                style={{
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px"
+                }}
             >
                 <Image src="/assets/img/shape/video_bg_shape3_2.png" alt="img"
                     width={134} height={640} />

@@ -87,8 +87,9 @@ export default function Hero() {
                                     <i className="fa-solid fa-arrow-up-right ms-2" />
                                 </Link>
                                 <a
-                                    href="https://www.youtube.com/watch?v=bI6JKjU_qeg"
+                                    href="https://yadahtv.co/"
                                     className="play-btn style3 popup-video"
+                                    target='_blank'
                                 >
                                     <i className="fas fa-play" />
                                 </a>

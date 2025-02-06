@@ -6,7 +6,7 @@
 /*------------------- 1.3. Variable-------------------*/
 :root {
   --theme-color: #182C4F;
-  --theme-dark: #122F2A;
+  --theme-dark: #0c182c;
   --theme-color2: #C03D30;
   --title-color: #1F1F1F;
   --body-color: #797E88;
@@ -6638,7 +6638,7 @@ ol.wp-block-rss {
   bottom: 0;
   height: 1px;
   width: 70px;
-  background-color: var(--theme-color2);
+  background-color: var(--theme-dark);
   opacity: 1;
   z-index: 1;
 }
@@ -6841,8 +6841,8 @@ ol.wp-block-rss {
 }
 
 .th-widget-contact {
-  background: rgba(26, 104, 91, 0.26);
-  border: 1px solid rgba(26, 104, 91, 0.46);
+  background: #1c3661;
+  border: 1px solid #3660a7;
   border-radius: 30px;
   padding: 30px 100px 30px 30px;
   position: relative;
@@ -6879,8 +6879,8 @@ ol.wp-block-rss {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(26, 104, 91, 0.26);
-  border: 1px solid rgba(26, 104, 91, 0.46);
+  background:#1c3661;
+  border: 1px solid #3f67a9;
   border-radius: 30px;
   padding: 3px;
   display: -webkit-box;
