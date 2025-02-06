@@ -78,13 +78,13 @@ export default function PhdMinistries() {
                         return (
                             <div className="col-xl-3 col-lg-4 m-0 " key={i}>
                                 <div className="feature-card p-0 flex flex-col items-center">
-                                    <div className="box-icon">
+                                    <div className="box-icon ">
                                         <Image src={e.image}
                                             className='w-full h-16' alt="icon" width={510} height={500} />
                                     </div>
-                                    <span className='font-bold'>{e.title}</span>
+                                    <span className='font-bold mb-3'>{e.title}</span>
                                     <Link href={e.downloadUrl}>
-                                        <button className="bg-primary w-fit p-3 rounded-xl text-white mb-3">Download</button>
+                                        <button className="px-5 bg-colorPrimary w-fit py-3  rounded-xl text-white mb-3">Download</button>
                                     </Link>
                                 </div>
                             </div>

@@ -3,40 +3,40 @@ import { toast, Bounce } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import { BiSmile } from 'react-icons/bi';
 import { CgSpinner } from 'react-icons/cg';
-
+export const makeToast = (message: string, error = false) => {
+    if (error) {
+        toast.error(message, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+        });
+    } else {
+        toast.success(message, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+        });
+    }
+}
 export default function ContactForm({ messageText, buttonText, success, type }: {
     messageText?: string | null,
     buttonText?: string | null,
     success?: string | null,
     type?: string | null
 }) {
-    const makeToast = (message: string, error = false) => {
-        if (error) {
-            toast.error(message, {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: false,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                transition: Bounce,
-            });
-        } else {
-            toast.success(message, {
-                position: "top-center",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: false,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "colored",
-                transition: Bounce,
-            });
-        }
-    }
+
     emailjs.init({
         publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY,
         limitRate: {

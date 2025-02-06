@@ -2,9 +2,21 @@ import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Hero2 from '@/components/secondary-headers/hero2'
 import Image from 'next/image'
-import React from 'react'
-
+import React, { useState } from 'react'
+import { Gallery } from "react-grid-gallery";
+import { images as IMAGES } from '@/stores/data/charity'
 export default function CharityPage() {
+
+    const [images, setImages] = useState(IMAGES);
+
+    const handleSelect = (index: number) => {
+        const nextImages = images.map((image, i) =>
+            i === index ? { ...image, isSelected: !image.isSelected } : image
+        );
+        setImages(nextImages);
+    };
+
+
     return (
         <>
             <Header page='ministry' />
@@ -23,7 +35,10 @@ export default function CharityPage() {
                     ]}
             />
             <section className="testi-area-1 space overflow-hidden" id="testi-sec">
-                <div className="shape-mockup testi-bg-shape1-1 jump-reverse d-xl-block d-none" data-top="5%" data-right="0">
+                <div className="shape-mockup testi-bg-shape1-1 jump-reverse d-xl-block d-none"
+                    style={{
+                        right: 0,
+                    }}>
                     <Image src="/assets/img/shape/footer-bg-shape3.png" alt="img"
                         width={208}
                         height={176} />
@@ -81,100 +96,17 @@ export default function CharityPage() {
                     </div>
                 </div>
             </section>
-            <div className="overflow-hidden space">
-                <div className="container">
-                    <div className="row gy-30 gx-30 filter-active">
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_1.png" alt="gallery image"
-                                        width={300}
-                                        height={490}
-                                    />
-                                    <a href="/assets/img/gallery/gallery_1_1.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_2.png" alt="gallery image"
-                                        width={300}
-                                        height={312}
-                                    />
-                                    <a href="/assets/img/gallery/gallery_1_2.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_3.png" alt="gallery image"
-                                        height={312}
-                                        width={300} />
-                                    <a href="/assets/img/gallery/gallery_1_3.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_4.png" alt="gallery image"
-                                        width={300}
-                                        height={462} />
-                                    <a href="/assets/img/gallery/gallery_1_4.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_6.png" alt="gallery image"
-                                        width={630}
-                                        height={400} />
-                                    <a href="/assets/img/gallery/gallery_1_6.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_5.png" alt="gallery image"
-                                        width={300}
-                                        height={502} />
-                                    <a href="/assets/img/gallery/gallery_1_5.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_7.png" alt="gallery image"
-                                        width={300}
-                                        height={250} />
-                                    <a href="/assets/img/gallery/gallery_1_7.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_9.png" alt="gallery image"
-                                        width={630}
-                                        height={244} />
-                                    <a href="/assets/img/gallery/gallery_1_9.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 col-xxl-auto col-lg-4 filter-item">
-                            <div className="gallery-card">
-                                <div className="gallery-img">
-                                    <Image src="/assets/img/gallery/gallery_1_8.png" alt="gallery image"
-                                        width={300}
-                                        height={244} />
-                                    <a href="/assets/img/gallery/gallery_1_8.png" className="icon-btn popup-image"><i className="fas fa-eye"></i></a>
-                                </div>
-                            </div>
+            <div className="overflow-hidden bg-[#EEEEEE] p-20 rounded-2xl">
+                <div className='flex justify-center p-6 '><h2 className='text-colorPrimary font-extrabold'>Our Gallery</h2></div>
+                <div className="container ">
+                    <div className="row gy-30 gx-30 filter-active" >
+                        <div>
+                            <Gallery
+                                rowHeight={300} enableImageSelection={false} images={images} onSelect={handleSelect}
+                                thumbnailStyle={{
+                                    borderRadius: "30px",
+                                    background: "transparent"
+                                }} />
                         </div>
                     </div>
                 </div>
@@ -182,4 +114,5 @@ export default function CharityPage() {
             <Footer />
         </>
     )
+
 }

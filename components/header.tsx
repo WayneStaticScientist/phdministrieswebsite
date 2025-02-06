@@ -1,18 +1,32 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FaPerson } from 'react-icons/fa6';
 const DynamicMobileHeader = dynamic(() => import('./mobile-menu'), { ssr: false });
 
 const Header = ({ page }: { page: string }) => {
-    const [navbar, setNavBar] = useState(false)
-    const toggleView = () => {
-        setNavBar(!navbar)
-    }
+    const [menuOpen, setMenuOpen] = useState(false); // State to track menu visibility
+    const elementRef = useRef<HTMLDivElement>(null)
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    useEffect(() => {
+        const menuToggle = document.querySelector('.th-menu-toggle');
+
+        if (menuToggle) { // Check if the element exists
+            menuToggle.addEventListener('click', () => {
+                setMenuOpen(!menuOpen)
+            });
+            return () => { // Clean up the event listener on unmount
+                menuToggle.removeEventListener('click', toggleMenu);
+            }
+        }
+    }, []);
     return (
         <>
-            <DynamicMobileHeader page={page} display={navbar} toggleDisplay={setNavBar} />
+            <DynamicMobileHeader setMenuOpen={setMenuOpen} menuOpen={menuOpen} page={page} ref={elementRef} />
             <header className="th-header header-layout2">
                 <div className="sticky-wrapper ">
                     <div className="w-full lg:pl-28 lg:pr-20 pr-8 pl-8" >
@@ -91,14 +105,21 @@ const Header = ({ page }: { page: string }) => {
                                     <i className="fas fa-heart me-2"></i>
                                     Donate
                                 </Link>
-                                <button type="button" className="lg:hidden  bg-colorPrimary p-3 flex-shrink-0 rounded-full text-white"><i
-                                    className="far fa-bars text-xl" onClick={toggleView}></i></button>
+                                <button
+                                    className="icon-btn th-menu-toggle d-lg-none"
+                                    type="button"
+
+                                >
+                                    <i className="far fa-bars text-sm"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
+
         </>
+
     );
 };
 
